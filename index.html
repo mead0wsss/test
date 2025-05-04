@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mead0wss | Biography</title>
+     <style>
+       body {
+           background-image: url("../photo/background.jpg");
+           background-size: cover;
+            background-attachment: fixed;
+           background-repeat: no-repeat;
+           background-position: center;
+           background-color: black;
+           margin: 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           font-family: days;
+           color: whitesmoke;
+           transition: background-image 0.5s ease;
+       }
+         body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../photo/overlay.png');
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .content-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 15px;
+            position: relative;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(12px);
+            width: 700px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 
+                0 4px 30px rgba(0, 0, 0, 0.1),
+                inset 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+       
+       .avatar {
+           width: 150px;
+           height: 150px;
+           border-radius: 10px;
+           object-fit: cover;
+           margin-bottom: 20px;
+           border: 1px solid #666666;
+           box-shadow: 0 0 5px darkgrey;
+       }
+        h1 {
+           margin-bottom: 15px;
+           font-size: 2em;
+           text-shadow: 0 0 5px rgb(0, 0, 0);
+        }
+        p {
+            white-space: pre-line;
+            text-shadow: 0 0 5px darkgrey;
+            font-size: 1.1em;
+        }
+        .ascii-art {
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        h3 {
+            text-shadow: 0 0 5px black;
+            font-size: 1.20em;
+            text-align: center;
+        }
+
+        a{
+            color: aliceblue;
+        }
+        /* Стили для кнопки как у друга */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px 25px; /* Увеличенные отступы */
+    margin-bottom: 10px;
+    text-decoration: none;
+    width: 350px; /* Фиксированная ширина */
+    box-sizing: border-box;
+    text-shadow: 0 0 5px black;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    font-size: 1.1em; /* Увеличенный текст */
+}
+        
+        .button-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .button-image {
+            width: 24px; /* Увеличенная иконка */
+    height: 24px;
+    margin-right: 12px;
+
+            border-radius: 0%;
+            object-fit: cover;
+        }
+   </style>
+</head>
+<body>
+    <div class="content-container">
+        <img src="../photo/avatar.jpg" alt="Аватар" class="avatar">
+        <h1>mead0wss</h1>
+        <h3>About me:<br>
+Maxim<br>
+16 y.o<br>
+Russia<br>
+Birthday 08.12<br>
+Coding on Python | Lua<br><br>
+
+My Telegram channels:<br>
+<a href="https://t.me/mead0wss">@mead0wss</a><br>
+<a href="https://t.me/mead0wssMods">@mead0wssMods</a><br>
+<a href="https://t.me/mead0wssBlog">@meadowssBlog</a><br><br>
+
+I use userbot Heroku<br><br>
+One love Sylphy and one girl
+</h3>
+        
+        
+        <div class="button-container">
+            <a href="https://t.me/maximtrous" class="button-link">
+                <img src="../photo/telegram-icon.webp" alt="Telegram Logo" class="button-image">
+                My Telegram
+            </a>
+        </div>
+    </div>
+</body>
+</html>
